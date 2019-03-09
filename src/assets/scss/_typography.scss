@@ -1,0 +1,28 @@
+h1.banner {
+  font-family: $banner-font-family;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 3rem 0;
+}
+p, label, ul {
+  font-size: 1.2rem;
+}
+a, .button {
+  font-family: $heading-font-family;
+  font-weight: bold;
+}
+ul {
+  list-style-type: square;
+  opacity: 0.8;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  @include breakpoint(medium up) {
+    margin-left: 4rem;
+  }
+  a {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
