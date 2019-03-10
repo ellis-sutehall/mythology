@@ -41,6 +41,12 @@ body {
 ul.menu {
   height: 3rem;
   background: black;
+  margin: 2rem auto 1rem auto;
+
+  @include breakpoint(medium up) {
+    margin-top: auto;
+  }
+  
   li {
     a {
       line-height: 1.5rem;
@@ -52,6 +58,14 @@ ul.menu {
         background: white;
       }
     }
+  }
+}
+
+// Buttons
+.button {
+  width: 100%;
+  @include breakpoint(medium up) {
+    width: auto;
   }
 }
 
@@ -75,7 +89,7 @@ ul.menu {
   background-color: black;
   color: $dark-gray;
   padding: .5rem;
-  height: 2rem;
+  min-height: 2rem;
   margin-top: 4rem;
   p {
     font-size: .8rem;
